@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#1891e5</color>
+    <color name="colorButton">#118CEE</color>
+    <color name="colorAPI21">#9005d2f9</color>
+    <color name = "toolbarStartColor">#1891d5</color>
+    <color name = "toolbarEndColor">#0871a5</color>
+    <color name = "bottomBar_color">#f6f6f6</color>
+    <color name = "highlightBlue">#1891e5</color>
+    <color name = "colorDivider">#e0e0e0</color>
+</resources>

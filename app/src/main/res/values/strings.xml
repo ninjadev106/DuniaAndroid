@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Dunia Pay</string>
+    <string name="log_in">Log In</string>
+    <string name="log_in_title">Login</string>
+    <string name="sign_up">Sign up</string>
+    <string name="use_touch_id">Use Touch Id</string>
+    <string name="email">Email</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="reason_for_sending">Reason for sending</string>
+    <string name="your_password">Your password</string>
+    <string name="firstname">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="password">Password</string>
+    <string name="complete">Complete</string>
+    <string name="send">Send</string>
+    <string name="history">History</string>
+    <string name="settings">SETTINGS</string>
+    <string name="settings_smallcaps">Settings</string>
+    <string name="transactions_history">Transactions history</string>
+    <string name="no_history_description">Your transactions history\nwill be displayed here</string>
+    <string name="Let_s_get_started">Let\'s get started</string>
+    <string name="send_money">Send money</string>
+    <string name="send_money_des1">It\'s easy to send money</string>
+    <string name="send_money_des2">to friends and family.</string>
+    <string name="language_region">LANGUAGE &amp; REGION</string>
+    <string name="notifications">Notifications</string>
+    <string name="my_profile">My profile</string>
+    <string name="profile_details">Profile details</string>
+    <string name="my_details">My details</string>
+    <string name="about_us">About us</string>
+    <string name="region">Region</string>
+    <string name="language">Language</string>
+    <string name="app_version">App Version</string>
+    <string name="log_out">Log out</string>
+    <string name="back">BACK</string>
+    <string name="new_transfer">New Transfer</string>
+    <string name="you_transfer">You transfer</string>
+    <string name="recipient_gets">Recipient gets</string>
+    <string name="collection_mode">Collection mode</string>
+    <string name="your_rate">Your rate</string>
+    <string name="transfer_fee">Transfer fee</string>
+    <string name="add_recipient">Add recipient</string>
+    <string name="payment_mode">Payment mode</string>
+    <string name="bank_account">Bank account</string>
+    <string name="bank_account_des">The maximum you can send with this\npayment method is 4.000 CAD.</string>
+    <string name="debit_credit">Debit / Credit card</string>
+    <string name="debit_credit_des">The maximum you can send with this\npayment method is 4.000 CAD.</string>
+    <string name="apple_pay">Apple pay</string>
+    <string name="apple_pay_des">The maximum you can send with this\npayment method is 4.000 CAD.</string>
+    <string name="customer_id">Customer ID</string>
+    <string name="middle_name">Middle name</string>
+    <string name="State_Province_Region">State/Province/Region</string>
+    <string name="postal_code">Postal code</string>
+    <string name="resetpassword">Reset password</string>
+    <string name="resetpassword_message">Enter the your username to reset your password</string>
+    <string name="forgotpassword">Forgot your password?</string>
+
+    <string name="mydetails">My details</string>
+    <string name="birthday">Birthday</string>
+    <string name="gender">Gender</string>
+
+    <string name="mobiphone">Mobile phone</string>
+    <string name="profession">Profession</string>
+
+    <string name="country_place_holder">Your country</string>
+    <string name="phone_place_holder">Enter your mobile number</string>
+    <string name="agreement">By signing up, you agree to the <a href=''>Dunia Payment Agreement</a> and the
+        <a href=''>Dunia Payment Privacy Policy</a>.</string>
+    <string name="enter4digits">ENTER THE 4 DIGITS YOU RECEIVED</string>
+    <string name="resendcode">Resend code</string>
+    <string name="home">HOME</string>
+    <string name="help_center">Help center</string>
+    <string name="help_center_description">Help content will be displayed here</string>
+    <string name="back_to_homepage">Back to Homepage</string>
+</resources>

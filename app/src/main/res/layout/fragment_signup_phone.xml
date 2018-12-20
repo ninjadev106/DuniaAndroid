@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button_Complete"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textSize="@dimen/textsize_header"
+            android:textAllCaps="false"
+            android:background="@drawable/buttonroundborder"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:text="@string/sign_up"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:layout_height="340dp"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/login">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:orientation="vertical"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal">
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp">
+                        <com.reginald.editspinner.EditSpinner
+                            android:id="@+id/spinner_Country"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:paddingRight="20dp"
+                            android:paddingLeft="20dp"
+                            android:singleLine="true"
+                            android:maxLines="1"
+                            android:hint="@string/country_place_holder"
+                            app:dropDownDrawable="@mipmap/country"
+                            app:dropDownDrawableSpacing="15dp"
+                            app:dropDownDrawableWidth="25dp"
+                            app:dropDownDrawableHeight="25dp"
+                            android:background="@drawable/background_edittext"/>
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp">
+
+
+                        <EditText
+                            android:id="@+id/editText_Phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:paddingRight="45dp"
+                            android:paddingLeft="65dp"
+                            android:singleLine="true"
+                            android:maxLines="1"
+                            android:hint="@string/phone_place_holder"
+                            android:inputType="phone"
+                            android:background="@drawable/background_edittext"/>
+
+                        <TextView
+                            android:id="@+id/textview_code"
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="@dimen/textsize_title"
+                            android:text="+844"
+                            android:textColor="@android:color/black"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textview_agreement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginBottom="40dp"
+                        android:gravity="center"
+                        android:textSize="@dimen/textsize_subtitle"
+                        android:text="@string/agreement"
+                        android:layout_centerHorizontal="true"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

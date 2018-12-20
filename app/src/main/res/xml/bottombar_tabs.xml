@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_send"
+        icon="@mipmap/location"
+        title="@string/send" />
+    <tab
+        id="@+id/tab_history"
+        icon="@mipmap/layers"
+        title="@string/history" />
+    <tab
+        id="@+id/tab_settings"
+        icon="@mipmap/cog"
+        title="@string/settings_smallcaps" />
+</tabs>

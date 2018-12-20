@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:text="name"
+            android:textSize="@dimen/textsize_title"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/textview_Country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_Name"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/darker_gray"
+            android:text="country"
+            android:textSize="@dimen/textsize_subtitle"/>
+
+        <TextView
+            android:id="@+id/textview_Bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_Name"
+            android:layout_alignParentRight="true"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/darker_gray"
+            android:text="bank"
+            android:textSize="@dimen/textsize_subtitle"/>
+
+        <TextView
+            android:id="@+id/textview_Amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textview_Name"
+            android:layout_toLeftOf="@+id/textview_Bank"
+            android:layout_marginRight="40dp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@android:color/darker_gray"
+            android:text="amount"
+            android:textSize="@dimen/textsize_subtitle"/>
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:background="@color/colorDivider"-->
+            <!--android:layout_below="@+id/textview_Bank"-->
+            <!--android:layout_marginTop="10dp"/>-->
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

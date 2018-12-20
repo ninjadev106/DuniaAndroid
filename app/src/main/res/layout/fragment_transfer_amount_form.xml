@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity"
+    android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp">
+
+            <ImageButton
+                android:id="@+id/button_Back"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/back"
+                android:background="@android:color/transparent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/textview_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:layout_toRightOf="@+id/button_Back"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textsize_title"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="10dp"
+            android:text="@string/new_transfer"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textsize_header"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/title"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/textview_transfer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/you_transfer"
+                    android:textSize="@dimen/textsize_subtitle"
+                    android:textColor="@android:color/darker_gray"/>
+
+                <RelativeLayout
+                    android:id="@+id/relative_transfer"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textview_transfer">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/down"/>
+
+                    <Button
+                        android:id="@+id/button_transfer"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textsize_title"
+                        android:text="USD"
+                        android:textAlignment="viewStart"
+                        android:background="@android:color/transparent">
+                    </Button>
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/edittext_transfer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textview_transfer"
+                    android:layout_toRightOf="@+id/relative_transfer"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textAlignment="viewEnd"
+                    android:hint="0.00"
+                    android:textSize="@dimen/textsize_title"
+                    android:textColor="@android:color/darker_gray"
+                    android:backgroundTint="@android:color/transparent"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/textview_recipient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/recipient_gets"
+                    android:textSize="@dimen/textsize_subtitle"
+                    android:textColor="@android:color/darker_gray"/>
+
+                <RelativeLayout
+                    android:id="@+id/relative_recipient"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textview_recipient">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@mipmap/down"/>
+
+                    <Button
+                        android:id="@+id/button_recipient"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/textsize_title"
+                        android:text="FCFA"
+                        android:textAlignment="viewStart"
+                        android:background="@android:color/transparent">
+                    </Button>
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/edittext_recipient"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textview_recipient"
+                    android:layout_toRightOf="@+id/relative_recipient"
+                    android:layout_marginTop="10dp"
+                    android:paddingRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:textAlignment="viewEnd"
+                    android:hint="0.00"
+                    android:textSize="@dimen/textsize_title"
+                    android:textColor="@android:color/darker_gray"
+                    android:backgroundTint="@android:color/transparent"/>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp">
+                <TextView
+                    android:id="@+id/textview_collecttion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/collection_mode"
+                    android:textSize="@dimen/textsize_subtitle"
+                    android:textColor="@android:color/darker_gray"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textview_collecttion">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@mipmap/down"/>
+
+                <Button
+                    android:id="@+id/button_collecttion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_title"
+                    android:text="@string/bank_account"
+                    android:textAlignment="viewStart"
+                    android:textAllCaps="false"
+                    android:background="@android:color/transparent">
+                </Button>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+                <TextView
+                    android:id="@+id/textview_rate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_rate"
+                    android:textSize="@dimen/textsize_subtitle"
+                    android:textColor="@android:color/darker_gray"/>
+
+                <TextView
+                    android:id="@+id/textview_rate_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textview_fee"
+                    android:text="553.89"
+                    android:textSize="@dimen/textsize_title"
+                    android:textColor="@color/colorButton"/>
+
+
+                <TextView
+                    android:id="@+id/textview_fee"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/transfer_fee"
+                    android:textSize="@dimen/textsize_subtitle"
+                    android:textColor="@android:color/darker_gray"/>
+
+                <TextView
+                    android:id="@+id/textview_fee_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textview_fee"
+                    android:layout_below="@+id/textview_fee"
+                    android:text="FREE"
+                    android:textSize="@dimen/textsize_title"
+                    android:textColor="@color/colorButton"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_AddRecipient"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:textSize="@dimen/textsize_header"
+            android:textAllCaps="false"
+            android:background="@drawable/buttonroundborder"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp"
+            android:text="@string/add_recipient"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

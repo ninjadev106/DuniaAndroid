@@ -1,0 +1,7 @@
+<resources>
+    <dimen name="textsize_header0">26sp</dimen>
+    <dimen name="textsize_header">22sp</dimen>
+    <dimen name="textsize_title">18sp</dimen>
+    <dimen name="textsize_subtitle">14sp</dimen>
+    <dimen name="button_phone">75dp</dimen>
+</resources>
